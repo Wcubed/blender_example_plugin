@@ -18,3 +18,14 @@ To connect it to a pycharm project (instructions from [here](https://b3d.interpl
 - "Add content root"
 - Add the 2.83 directory.
   When this project was generated it was: `/media/Data/WybeData/Tools/Blender/blender_autocomplete_modules/2.83`
+
+### Install add-on into blender
+
+One way to install the add-on in blender, while automatically keeping
+it up-to-date while writing code is to add a simlink to the `src` folder
+into the blender addons directory.
+
+In my case that would be: `/home/<username>/.config/blender/2.83/scripts/addons`.
+
+The plugin will then appear in the blender addons selector after refreshing the
+list, and can then be enabled.
