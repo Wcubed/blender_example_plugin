@@ -6,15 +6,18 @@ if "bpy" in locals():
 
     importlib.reload(panel)
     importlib.reload(properties)
+    importlib.reload(operator)
 else:
     from . import panel
     from . import properties
+    from . import operator
 
 import bpy
 
 classes = [
     panel.ExamplePanel,
-    properties.ExampleSceneProperties
+    properties.ExampleSceneProperties,
+    operator.ExampleOperator
 ]
 
 
@@ -33,6 +36,7 @@ def unregister_all():
 
 
 def add_properties():
+    # Here we specify which object the properties belong to.
     bpy.types.Scene.example_props = bpy.props.PointerProperty(name="Example Scene Properties",
                                                               type=properties.ExampleSceneProperties)
     pass

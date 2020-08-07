@@ -10,4 +10,16 @@ class ExampleSceneProperties(bpy.types.PropertyGroup):
                                  description="An example of a float property.",
                                  default=1.5,
                                  min=0.1,
-                                 max=10)
+                                 max=10,)
+
+    # This property is explicitly animatable.
+    example_vector: FloatVectorProperty(name="Vector Property",
+                                        description="An example of a vector property.",
+                                        default=[1, 1, 1],
+                                        options=set(['ANIMATABLE']))
+
+    example_bool: BoolVectorProperty(name="Bool vector property",
+                                     description="An example of a bool vector property.",
+                                     default=[False, True, False],
+                                     options=set(),
+                                     subtype='XYZ')
