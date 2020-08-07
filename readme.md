@@ -29,3 +29,8 @@ In my case that would be: `/home/<username>/.config/blender/2.83/scripts/addons`
 
 The plugin will then appear in the blender addons selector after refreshing the
 list, and can then be enabled.
+
+Don't forget to run blender from a terminal, so that you can see
+ the output of `print` calls.
+ 
+ To reload all add-ons call "reload scripts" either from the spacebar menu or by binding a key to `script.reload`.

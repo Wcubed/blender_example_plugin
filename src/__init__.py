@@ -7,10 +7,24 @@ bl_info = {
     "category": "Generic",
 }
 
+if "bpy" in locals():
+    # Allow for reloading the script.
+    import importlib
+
+    importlib.reload(registration)
+else:
+    from . import registration
+
+import bpy
+
 
 def register():
-    print("Hello World")
+    registration.register_all()
 
 
 def unregister():
-    print("Goodbye World")
+    registration.unregister_all()
+
+
+if __name__ == '__main__':
+    register()

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../programs/blender-level-generator/.idea/blender-level-generator.iml" filepath="$PROJECT_DIR$/../../programs/blender-level-generator/.idea/blender-level-generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/blender_example_addon.iml" filepath="$PROJECT_DIR$/.idea/blender_example_addon.iml" />
     </modules>
   </component>

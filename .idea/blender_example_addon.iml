@@ -8,5 +8,6 @@
     <content url="file://$MODULE_DIR$/../../../../Tools/Blender/blender_autocomplete_modules/2.83" />
     <orderEntry type="jdk" jdkName="Python 3.7 (blender_example_addon)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="blender-level-generator" />
   </component>
 </module>
