@@ -11,5 +11,7 @@ class ExampleOperator(bpy.types.Operator):
     bl_options = {'REGISTER'}
 
     def execute(self, context):
-        print("Did the thing!")
+
+        self.report({'INFO'}, "Did the thing!")
+
         return {'FINISHED'}
